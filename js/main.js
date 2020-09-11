@@ -4,4 +4,6 @@ $(function(){
         prevArrow: '<button type="button" class="slick-btn slick-prev slick-disabled"></button>',
         infinite: false
     });
+
+    $('select').styler();
 });
