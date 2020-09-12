@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/jquery.formstyler.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -42,6 +43,9 @@
               </a>
             </div>
             <nav class="menu">
+              <div class="header__btn-menu">
+                <span class="icon-bars"> </span>
+              </div>
               <ul>
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">О компании</a></li>
@@ -421,13 +425,17 @@
               >
 
               <ul class="footer__list">
-                <li><a href="tel:+79221112534"></a>+7(922)34-56</li>
+                <li>
+                  <a class="footer__phone" href="tel:+79221112534"></a
+                  >+7(922)34-56
+                </li>
                 <li><a href="#"></a>forspamandtrash@list.ru</li>
-                <li><a href="#"></a>Москва, МГУ</li>
+                <li><a class="footer__address" href="#"></a>Москва, МГУ</li>
               </ul>
             </div>
             <div class="footer__map">
               <iframe
+                height="250px"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.140017934763!2d37.526480916136364!3d55.70393790322691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54c6435a66743%3A0xfae7174706dad052!2sStaatsuniversiteit%20van%20Moskou!5e0!3m2!1snl!2sru!4v1599841343351!5m2!1snl!2sru"
                 frameborder="0"
                 style="border: 0"
@@ -449,8 +457,11 @@
     </footer>
 
     <div id="modal">
-      <h2>Hello!</h2>
-      <p>You are awesome!</p>
+      <form>
+        <input type="text" placeholder="Ваше имя" />
+        <input type="text" placeholder="Ваш телефон" />
+        <input type="submit" value="Отправить" />
+      </form>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
